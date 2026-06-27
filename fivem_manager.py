@@ -44,16 +44,16 @@ JUNK_EXTENSIONS = {
 VEHICLE_MODEL_EXTENSIONS = {".yft", ".ytd"}
 
 LANG_NAMES = {
-    "1": "English",
-    "2": "Jian Ti Zhong Wen (Simplified Chinese)",
-    "3": "Fan Ti Zhong Wen (Traditional Chinese)",
-    "4": "Deutsch",
-    "5": "Russkiy (Russian)",
-    "6": "Francais (French)",
-    "7": "Espanol (Spanish)",
-    "8": "Portugues (Portuguese)",
-    "9": "Nihongo (Japanese)",
-    "10": "Hangugeo (Korean)",
+    "1":  "English",
+    "2":  "简体中文",
+    "3":  "繁體中文",
+    "4":  "Deutsch",
+    "5":  "Русский",
+    "6":  "Français",
+    "7":  "Español",
+    "8":  "Português",
+    "9":  "日本語",
+    "10": "한국어",
     "11": "Indonesia",
 }
 
@@ -1025,6 +1025,58 @@ def build_lang(k):
         "overwrite_warn":  {"1":"fxmanifest.lua already exists - it will be overwritten.","2":"fxmanifest.lua 已存在，将被覆盖。","3":"fxmanifest.lua 已存在，將被覆寫。","4":"fxmanifest.lua existiert bereits - wird ueberschrieben.","5":"fxmanifest.lua uzhe sushchestvuyet - budet perezapisan.","6":"fxmanifest.lua existe deja - il sera ecrase.","7":"fxmanifest.lua ya existe - sera sobrescrito.","8":"fxmanifest.lua ja existe - sera sobrescrito.","9":"fxmanifest.lua wa sudeni sonzai shimasu - uwagaki saremasu.","10":"fxmanifest.lua ga imi johnjaeham - deopyeosseumida.","11":"fxmanifest.lua sudah ada - akan ditimpa."},
         "model_found":     {"1":"Model name: {m}","2":"检测到载具模型名：{m}","3":"偵測到載具模型名稱：{m}","4":"Modellname: {m}","5":"Imya modeli: {m}","6":"Nom de modele : {m}","7":"Nombre de modelo: {m}","8":"Nome do modelo: {m}","9":"Moderu mei: {m}","10":"Model myeong: {m}","11":"Nama model: {m}"},
         "model_fallback":  {"1":"No vehicles.meta found, using folder name: {m}","2":"未找到 vehicles.meta，使用文件夹名：{m}","3":"未找到 vehicles.meta，使用資料夾名稱：{m}","4":"Keine vehicles.meta gefunden, Ordnername wird verwendet: {m}","5":"vehicles.meta ne naydeno, ispol'zuetsya imya papki: {m}","6":"Aucun vehicles.meta, nom du dossier utilise : {m}","7":"No se encontro vehicles.meta, usando nombre de carpeta: {m}","8":"Nenhum vehicles.meta encontrado, usando nome da pasta: {m}","9":"vehicles.meta ga mitsukairimasen, forudaa mei wo shiyou: {m}","10":"vehicles.meta reul chatji mos hae poldeo ireum sayong: {m}","11":"Tidak ada vehicles.meta, menggunakan nama folder: {m}"},
+        "gen_txt_prompt": {
+            "1": "Generate a vehicle model name list (.txt)?",
+            "2": "是否生成载具代码列表（.txt 文本文档）？",
+            "3": "是否產生載具代碼列表（.txt 文字文件）？",
+            "4": "Eine Fahrzeugmodell-Namensliste (.txt) generieren?",
+            "5": "Sozdat' spisok nazvany modeley (.txt)?",
+            "6": "Generer une liste de noms de modeles (.txt) ?",
+            "7": "Generar lista de nombres de modelos (.txt)?",
+            "8": "Gerar lista de nomes de modelos (.txt)?",
+            "9": "Moderu mei risuto (.txt) wo seisei shimasu ka?",
+            "10": "Model myeong mog lok (.txt) reul saengseong hagesseumnikka?",
+            "11": "Buat daftar nama model kendaraan (.txt)?",
+        },
+        "gen_txt_name_prompt": {
+            "1": "Enter a name for the txt file (without extension)",
+            "2": "请输入 txt 文件名（不含扩展名）",
+            "3": "請輸入 txt 檔案名稱（不含副檔名）",
+            "4": "Name der txt-Datei eingeben (ohne Endung)",
+            "5": "Vvedite nazvanie txt-fayla (bez rasshireniya)",
+            "6": "Entrez le nom du fichier txt (sans extension)",
+            "7": "Introduce el nombre del archivo txt (sin extension)",
+            "8": "Digite o nome do arquivo txt (sem extensao)",
+            "9": "Txt fairu mei wo nyuuryoku (kakuchoushi nashi)",
+            "10": "Txt pail ireumeul ibnlyeog (hwakjang ja jegoe)",
+            "11": "Masukkan nama file txt (tanpa ekstensi)",
+        },
+        "gen_txt_done": {
+            "1": "Vehicle code list saved to: {p}",
+            "2": "载具代码列表已保存至：{p}",
+            "3": "載具代碼列表已儲存至：{p}",
+            "4": "Fahrzeugliste gespeichert in: {p}",
+            "5": "Spisok sohkranen v: {p}",
+            "6": "Liste des modeles sauvegardee dans : {p}",
+            "7": "Lista guardada en: {p}",
+            "8": "Lista salva em: {p}",
+            "9": "Risuto wo hozon shimashita: {p}",
+            "10": "Mog lok i jegjang doessseumnida: {p}",
+            "11": "Daftar disimpan di: {p}",
+        },
+        "ask_organize_tuning": {
+            "1": "Also organize tuning parts in the merged pack now?",
+            "2": "是否同时整理整合包中的改装件？",
+            "3": "是否同時整理整合包中的改裝件？",
+            "4": "Tuning-Teile im zusammengefuehrten Paket jetzt organisieren?",
+            "5": "Organizovat' tiuning-zapchasti v ob'yedinennom pakete seychas?",
+            "6": "Organiser les pieces de tuning dans le pack fusionne maintenant ?",
+            "7": "Organizar piezas de tuning en el paquete fusionado ahora?",
+            "8": "Organizar pecas de tuning no pacote mesclado agora?",
+            "9": "Ima toukei shita pakku no chyuuningu buhinn wo seiri shimasu ka?",
+            "10": "Jigeum byeonghap doen pakeji eseo tyuning bupum reul jeongni hagesseumnikka?",
+            "11": "Atur suku cadang tuning di paket yang digabung sekarang?",
+        },
         "menu_1_warn":  {k: "" for k in LANG_NAMES},
     }
 
@@ -1274,6 +1326,26 @@ def mode_merge(L, mode):
     print(L["junk_disable"])
     do_junk = pick(L["choose"], ("1", "2")) == "1"
 
+    do_gen_txt       = False
+    txt_file_name    = "vehicle_codes"
+    do_tuning        = False
+    tuning_subfolder = "tuning_parts"
+
+    if not is_audio:
+        print(f"\n  {YELLOW}{L['gen_txt_prompt']}{RESET}")
+        print(f"  [1] Yes   [2] No")
+        if pick(L["choose"], ("1", "2")) == "1":
+            do_gen_txt    = True
+            txt_file_name = ask(L["gen_txt_name_prompt"]) or "vehicle_codes"
+
+        print(f"\n  {YELLOW}{L['ask_organize_tuning']}{RESET}")
+        print(f"  [1] Yes   [2] No")
+        if pick(L["choose"], ("1", "2")) == "1":
+            do_tuning        = True
+            tuning_subfolder = ask(
+                f"{L['tuning_folder_prompt']}  {GRAY}{L['tuning_folder_hint']}{RESET}"
+            ) or "tuning_parts"
+
     print(f"\n  {YELLOW}{L['confirm']}{RESET}")
     if pick(L["choose"], ("1", "2")) != "1":
         warn(L["abort"])
@@ -1310,33 +1382,85 @@ def mode_merge(L, mode):
         (out_root / "data").mkdir(parents=True, exist_ok=True)
         (out_root / "stream").mkdir(parents=True, exist_ok=True)
         vehicle_count = 0
+        all_models    = []
+        failed_packs  = []
+
+        meta_exts   = {".meta", ".dat"}
+        stream_exts = {".yft", ".ytd", ".ydr", ".ydd", ".ybn", ".ymap", ".awc"}
+
         for pack in packs:
-            model = extract_model_name(pack)
-            info(L["model_found"].format(m=model))
-            data_src = pack / "data"
-            if data_src.is_dir():
-                dst_data = out_root / "data" / model
-                dst_data.mkdir(exist_ok=True)
-                for f in data_src.rglob("*"):
-                    if f.is_file():
-                        dst = dst_data / f.name
-                        if dst.exists():
-                            skipped.append(f.name)
-                        else:
-                            shutil.copy2(f, dst)
-            stream_src = pack / "stream"
-            if stream_src.is_dir():
+            try:
+                model = extract_model_name(pack)
+                info(L["model_found"].format(m=model))
+
+                dst_data   = out_root / "data"   / model
                 dst_stream = out_root / "stream" / model
-                dst_stream.mkdir(exist_ok=True)
-                for f in stream_src.rglob("*"):
-                    if f.is_file():
+
+                found_meta      = []
+                found_stream    = []
+                copy_errors     = []
+
+                for f in pack.rglob("*"):
+                    if not f.is_file():
+                        continue
+                    ext = f.suffix.lower()
+                    if ext in meta_exts:
+                        found_meta.append(f)
+                    elif ext in stream_exts:
+                        found_stream.append(f)
+
+                if not found_meta and not found_stream:
+                    reason = f"No game files found in {pack.name}"
+                    warn(f"SKIP  {pack.name}: {reason}")
+                    failed_packs.append((pack.name, model, reason))
+                    continue
+
+                for f in found_stream:
+                    try:
+                        dst_stream.mkdir(exist_ok=True)
                         dst = dst_stream / f.name
                         if dst.exists():
                             skipped.append(f.name)
                         else:
                             shutil.copy2(f, dst)
-            vehicle_count += 1
-            ok(f"{pack.name}  ->  {model}")
+                    except Exception as e:
+                        copy_errors.append(f.name)
+                        warn(f"  Copy failed [{f.name}]: {e}")
+
+                for f in found_meta:
+                    try:
+                        dst_data.mkdir(exist_ok=True)
+                        dst = dst_data / f.name
+                        if dst.exists():
+                            skipped.append(f.name)
+                        else:
+                            shutil.copy2(f, dst)
+                    except Exception as e:
+                        copy_errors.append(f.name)
+                        warn(f"  Copy failed [{f.name}]: {e}")
+
+                if copy_errors:
+                    reason = f"{len(copy_errors)} file(s) failed to copy"
+                    warn(f"WARN  {pack.name}: {reason}")
+                    failed_packs.append((pack.name, model, reason))
+                else:
+                    vehicle_count += 1
+                    all_models.append(model)
+                    ok(f"{pack.name}  ->  {model}  (meta:{len(found_meta)} stream:{len(found_stream)})")
+
+            except Exception as e:
+                reason = str(e)
+                err(f"FAIL  {pack.name}: {reason}")
+                failed_packs.append((pack.name, "unknown", reason))
+
+        print()
+        print(f"  {GREEN}>> Success : {vehicle_count}/{len(packs)}{RESET}")
+        if skipped:
+            print(f"  {YELLOW}>> Skipped (duplicate) : {len(skipped)}{RESET}")
+        if failed_packs:
+            print(f"  {RED}>> Failed / Warning : {len(failed_packs)}{RESET}")
+            for pack_name, model_name, reason in failed_packs:
+                print(f"     {RED}-{RESET}  {pack_name}  [{model_name}]  ->  {reason}")
 
     if skipped:
         print()
@@ -1346,6 +1470,39 @@ def mode_merge(L, mode):
     if do_junk:
         step("Cleaning junk files...")
         cleanup_junk(out_root, L)
+
+    if not is_audio and do_gen_txt:
+        txt_path = out_root / f"{txt_file_name}.txt"
+        collected = all_models if 'all_models' in dir() else []
+        txt_path.write_text("\n".join(collected) + "\n", encoding="utf-8")
+        ok(L["gen_txt_done"].format(p=str(txt_path)))
+
+    if not is_audio and do_tuning:
+        step(L["menu_5"])
+        stream_dir = out_root / "stream"
+        if stream_dir.is_dir():
+            total_moved = 0
+            for vehicle_dir in sorted(stream_dir.iterdir()):
+                if not vehicle_dir.is_dir():
+                    continue
+                model_name = vehicle_dir.name.lower()
+                tuning_dst = vehicle_dir / tuning_subfolder
+                moved_any  = False
+                for f in list(vehicle_dir.iterdir()):
+                    if not f.is_file():
+                        continue
+                    ext = f.suffix.lower()
+                    if ext not in {".yft", ".ytd", ".ydr"}:
+                        continue
+                    if is_vehicle_model_file(f.name, model_name):
+                        continue
+                    if not moved_any:
+                        tuning_dst.mkdir(exist_ok=True)
+                        moved_any = True
+                    dst = tuning_dst / f.name
+                    shutil.move(str(f), str(dst))
+                    total_moved += 1
+            ok(L["tuning_done"].format(n=total_moved))
 
     step(L["writing_manifest"])
     if is_audio:
